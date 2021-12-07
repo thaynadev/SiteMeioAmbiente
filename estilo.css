@@ -1,0 +1,35 @@
+* { margin: 0; padding: 0; }
+body{background: #d2d2c1 url('fotos/fundosite.jpg')no-repeat bottom center scroll;  background-attachment: fixed;
+  background-size: cover;
+
+;font: 16px Arial, Helvetica, sans-serif;}
+
+#sliderDiv{height: 301px; border-radius: 10px 10px 0px 0px;}
+#principal {margin: 0 auto;width: 900px;     /*largura da div>*/}
+#menu {background: #022b0b; padding: 18px;  /*dentro da borda, onde há o contreudo, colocamos o espaçamento interno usando o padding*/ }
+#conteudos{ background: #bbccb7; padding: 10px;}
+.images { max-width: 800px; border-radius: 10px 10px 10px 10px; display: block; margin-left: auto;margin-right: auto;-webkit-box-shadow: 0px 7px 5px rgba(50, 50, 50, 0.77); -moz-box-shadow:    0px 7px 5px rgba(50, 50, 50, 0.77); box-shadow}
+
+ a {  /*formatar os link, por isso estamos usando o a, iremos remover o underline dos links*/
+   color: #b4f8b1;
+   text-decoration: none;
+   font-weight: bold;
+   padding: 5px; /*aumentar  o espaçamento entre os links*/
+}
+.centralizar { text-align: center;}
+.img-campanha { border: 10px solid #c3c3ae}
+h1 { color: #333305; font-size: 1.5em; text-align: center;}
+
+/*aqui começa o slideshow>*/
+.slider { display: block; height: 300px; width: 900px; margin: auto; margin-top: 20px; position: relative; }
+.slider li { list-style: none; position: absolute;}
+.slider img { margin: auto; height: 100%; width: 100%; vertical-align: top;border-radius: 10px 10px 0px 0px;}
+.slider input { display: none;}
+.slider label { background-color: #000; bottom: 10px; cursor: pointer; display: block; height: 10px; position: absolute; width: 10px; z-index: 10;}
+.slider li:nth-child(1) label { left: 10px;}
+.slider li:nth-child(2) label { left: 40px;}
+.slider li:nth-child(3) label { left: 70px;}
+.slider img { opacity: 0; visibility: hidden;}
+.slider li input:checked ~ img { opacity: 1; visibility: visible; z-index: 10;}
+
+#rodape {background: #022b0b; padding: 18px; color:#ffffff; border-radius: 0px 0px 10px 10px; -webkit-box-shadow: 0px 7px 5px rgba(50, 50, 50, 0.77); -moz-box-shadow:    0px 7px 5px rgba(50, 50, 50, 0.77); box-shadow:         0px 7px 5px rgba(50, 50, 50, 0.77);}
